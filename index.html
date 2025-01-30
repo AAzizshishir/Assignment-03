@@ -41,6 +41,7 @@
             },
             colors: {
               mainColor: "rgb(23, 152, 0)",
+              secondary: "rgb(239, 235, 227)",
               textBlack: "rgb(17,17,17)",
               btnHover: "rgb(37, 203, 8)",
               cardBg1: "rgb(17, 84, 20)",
@@ -53,7 +54,7 @@
   </head>
   <body class="font-customFont">
     <!-- Header Section -->
-    <header class="bg-gray-100">
+    <header class="bg-gradient-to-b from-white to-secondary">
       <!-- Navigation -->
       <nav class="md:px-16 px-4 border-b border-mainColor md:border-0">
         <div class="navbar">
@@ -109,7 +110,7 @@
         </div>
 
         <!-- Image Container -->
-        <div class="md:w-[950px] md:h-[750px] mx-auto mt-8">
+        <div class="md:w-[950px] mx-auto mt-8">
           <img
             class="w-full"
             src="./c2-assets/hero-vegetables.png"
@@ -119,9 +120,68 @@
       </div>
     </header>
     <!-- Header Section End -->
-     
+
     <!-- Main Section -->
-    <main></main>
+    <main>
+      <!-- Services Section -->
+      <section class="mt-32 px-5 md:px-20">
+        <h2 class="text-4xl text-mainColor font-semibold mb-6">Services</h2>
+
+        <!-- Card Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="card bg-secondary">
+            <div class="card-body text-center p-3 md:p-6">
+              <div class="avatar">
+                <div class="w-24 rounded-full mx-auto bg-white p-4">
+                  <img src="./c2-assets/service.png" />
+                </div>
+              </div>
+              <h2 class="text-2xl font-semibold text-textBalck">
+                24/7 Services
+              </h2>
+              <p class="text-gray-700">
+                Our services 24/7 for our customers.We provide our best services for our customers.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card bg-secondary">
+            <div class="card-body text-center p-3 md:p-6">
+              <div class="avatar">
+                <div class="w-24 rounded-full mx-auto bg-white p-4">
+                  <img src="./c2-assets/delivery.png" />
+                </div>
+              </div>
+              <h2 class="text-2xl font-semibold text-textBalck">
+                Fast Delivery
+              </h2>
+              <p class="text-gray-700">
+                Our delivery is one of the most populer and very fast.It has no
+                complain at all in our five years journey.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card bg-secondary">
+            <div class="card-body text-center p-3 md:p-6">
+              <div class="avatar">
+                <div class="w-24 rounded-full mx-auto bg-white p-4">
+                  <img src="./c2-assets/healthy.png" />
+                </div>
+              </div>
+              <h2 class="text-2xl font-semibold text-textBalck">
+                Healthy Products 
+              </h2>
+              <p class="text-gray-700">
+                We ensure that our products is very healthy.We gaurantee to our customer for providing healthy food.Because Healthy food is involve our health.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section End -->
+    </main>
 
     <!-- Footer Section -->
     <footer></footer>
