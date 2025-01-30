@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vegitable Shop</title>
+    <title>Vegetable Shop</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,12 +40,90 @@
               customFont: ["Sora", "serif"],
             },
             colors: {
-              clifford: "#da373d",
+              mainColor: "rgb(23, 152, 0)",
+              textBlack: "rgb(17,17,17)",
+              btnHover: "rgb(37, 203, 8)",
+              cardBg1: "rgb(17, 84, 20)",
+              cardBg2: "rgb(16, 40, 97)",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="font-customFont"></body>
+  <body class="font-customFont">
+    <!-- Header Section -->
+    <header class="bg-gray-100">
+      <!-- Navigation -->
+      <nav class="md:px-16 px-4 border-b border-mainColor md:border-0">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div>
+              <img class="w-28" src="./c2-assets/logo-header.png" alt="Logo" />
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="#" class="font-medium">Product</a></li>
+              <li><a href="#" class="font-medium">Services</a></li>
+              <li><a href="#" class="font-medium">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-3">
+            <i
+              class="fa-solid fa-magnifying-glass hidden md:block cursor-pointer"
+            ></i>
+            <i
+              class="fa-solid fa-cart-shopping hidden md:block cursor-pointer"
+            ></i>
+            <button
+              class="px-8 py-2 border border-mainColor rounded-md font-semibold hover:bg-btnHover duration-300 hover:text-white hidden md:block"
+            >
+              Login
+            </button>
+            <button
+              class="px-8 py-2 border border-mainColor bg-mainColor text-white rounded-md hover:bg-btnHover duration-300 hover:text-white hidden md:block"
+            >
+              Register
+            </button>
+            <i
+              class="fa-solid fa-bars text-mainColor text-2xl block md:hidden"
+            ></i>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation End -->
+
+      <!-- Banner -->
+      <div class="mt-16">
+        <!-- Text Content -->
+        <div class="md:w-1/2 px-7 mx-auto text-center">
+          <h1 class="font-semibold text-4xl text-textBlack mb-6">
+            Freshness <span class="text-mainColor">You Can Count</span> On,
+            Prices You’ll Love!
+          </h1>
+          <p class="text-textBlack">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we’ve got you covered every day!
+          </p>
+        </div>
+
+        <!-- Image Container -->
+        <div class="md:w-[950px] md:h-[750px] mx-auto mt-8">
+          <img
+            class="w-full"
+            src="./c2-assets/hero-vegetables.png"
+            alt="Vegetables"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+     
+    <!-- Main Section -->
+    <main></main>
+
+    <!-- Footer Section -->
+    <footer></footer>
+  </body>
 </html>
